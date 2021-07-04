@@ -24,8 +24,13 @@ class Year {
     
     var isLeapYear: Bool {
         get {
-            // 이 곳에 코드를 작성하세요.
-            return false // 이 줄의 코드는 삭제하고 작성하세요.
+            if calendarYear % 4 == 0 && calendarYear % 100 != 0 {
+                return true
+            } else if calendarYear % 400 == 0 {
+                return true
+            } else {
+                return false
+            }
         }
     }
     
