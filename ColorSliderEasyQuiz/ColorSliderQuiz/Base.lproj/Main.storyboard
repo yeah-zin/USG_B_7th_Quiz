@@ -75,12 +75,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueLable" destination="GUW-qD-MuN" id="M3Q-Ez-5CD"/>
                         <outlet property="blueSlider" destination="xJG-Ev-tVB" id="woh-A7-etH"/>
                         <outlet property="colorView" destination="kxM-3R-Ftc" id="nK0-Qw-XKx"/>
-                        <outlet property="greenLabel" destination="xmR-2N-nao" id="f5W-iM-cyW"/>
                         <outlet property="greenSlider" destination="kpd-Vb-HAd" id="uJB-Sc-VpK"/>
-                        <outlet property="redLabel" destination="1pl-5k-bld" id="yp5-Xs-99k"/>
                         <outlet property="redSlider" destination="NhR-Ah-IiK" id="cUE-5b-f8D"/>
                     </connections>
                 </viewController>
