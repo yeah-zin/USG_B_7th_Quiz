@@ -29,15 +29,21 @@ class MoviesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return movies.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell1", for: indexPath)
+        
+        cell.textLabel?.text = movies[indexPath.row].title
+        
+        cell.detailTextLabel?.text = movies[indexPath.row].director
+        
         
         return cell
 
